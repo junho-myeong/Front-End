@@ -1,0 +1,42 @@
+<!-- 현재 이 HTML을 몇 버전인지 브라우저에게 알려주고 그것에 맞게 동작하게 해달라고 하는것이다.-->
+<!DOCTYPE html> 
+<!-- 문서의 전체 범위 HTML 문서가 어디에서 시작하고, 어디에서 끝나는지 브라우저에게 알려준다.-->
+<html lang="ko">
+<!-- 문서의 정보를 나타내는 범위 웹 브라우저가 해석해야할 웹 페이지의 제목, 설명, 사용할 파일 위치, 스타일 같은 웹페이지의 보이지 않는 정보를 작성하는 범위-->
+  <head>
+    <!-- meta태그는 html 문서의 제작자, 내용, 키워드같은 여러 정보를 검색엔진이나 브라우저에게 제공 -->
+    <!-- 속성에서 name은 정보의 종류를 뜻하고 content 속성은 정보의 값을 뜻한다.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title태그는 HTML문서의 제목을 정의한다-->
+    <title>JUNHO</title>
+    <!-- link 태그는 외부 문서를 가져와 연결할 때 사용(대부분 css파일)-->
+    <!-- rel은 가져올 문서와의 관계를 말한다-->
+    <!-- href 가져올 문서의 경로를 말한다-->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="icon" href="/test2/images/logo.png">
+    <!-- src라는 속성을 사용할시 외부에 잇는 js파일의 문서를 가져오는것을 뜻한다-->
+    <!-- src속성을 사용하지 않으면 자바스크립트를 html 문서 안에서 작성하는 경우를 뜻한다.-->
+    <script src="./JS/main.js" defer></script>
+    <!-- 스타일(CSS)를 HTML 문서 안에서 작성하는 경우에 사용한다-->
+    <style>
+      div {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+<!-- 문서의 구조를 나타내는 범위 사용자 화면을 통해 보여지는 로고, 헤더, 푸터, 네비게이션등 웹페이지의 보여지는 구조를 작성하는 범위-->
+  <body>
+    <!-- <div>
+      
+    </div> -->
+    <!-- alt 속성은 대체텍스트라는 뜻으로 특정 경로에서 이미지를 찾아서 출력하려 할때 출력할수 없는 예외 상황에 이 텍스트를 출력하게 해서 우리가 확인할수잇게해준다-->
+    <!-- 상대경로, 절대경로-->
+    <!-- <img src="/test2/images/logo.png" alt="logo"> -->
+
+    <!-- 링크 즉 href(hyper text reference)를 통해서 이 경로로 페이지를 이동시켜준다.-->
+    <a href="https://naver.com">naver</a>
+    <a href="/test2/about/about.html">about</a>
+  </body>
+</html>
