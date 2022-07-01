@@ -2,7 +2,7 @@
 
 
 /* 가상클래스 선택자1 */
-.box {
+/* .box {
   width: 100px;
   height: 100px;
   background-color: orange;
@@ -20,7 +20,7 @@
 }
 
 /* div태그는 focus가능한 클래스가 아니기 때문에 focus를 줄수 없다 */
-.box:focus {
+/* .box:focus {
   width: 300px;
   background-color: royalblue;
 }
@@ -31,4 +31,81 @@
 
 .focus-test:focus {
   background-color: orange;
+}  */
+
+
+/* 가상요소 클래스 */
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
 }
+
+.box::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: royalblue;
+  display: block;
+}
+
+.box::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: royalblue;
+  display: block;
+} */
+
+
+/* 속성 선택자 */
+
+/* [type] {
+  background-color: orange;
+}
+
+[type="text"] {
+  background-color: red;
+}
+
+[data-name-fruit] {
+  color: royalblue;
+} */
+
+
+/* 스타일 상속 */
+/* .parent {
+  width: 300px;
+  height: 400px;
+  background-color: orange;
+}
+
+.child {
+  width: 100px;
+  height: inherit;
+  background-color: inherit;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+} */
+
+/* 선택자 우선순위 */
+div {
+  font-size: 70px;
+}
+
+/* #hello {
+  color: blue;
+} */
+
+div.hello {
+  color: red;
+}
+
+.hello {
+  color: green;
+}
+
+
+
+
