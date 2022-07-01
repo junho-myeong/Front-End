@@ -90,22 +90,21 @@
 } */
 
 /* 선택자 우선순위 */
-div {
+/* div {
   font-size: 70px;
-}
+} */
 
 /* #hello {
   color: blue;
 } */
 
-div.hello {
+/* div.hello {
   color: red;
 }
 
 .hello {
-  color: green;
-}
-
+  color: green !important;
+} */
 
 
 
