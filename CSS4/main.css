@@ -107,4 +107,31 @@
 } */
 
 
+ /* 문자 */
+ /* a {
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+ 
+  text-align: center; /* 문자를 좌우에서 가운데 정렬 */
+  /*line-height: 100px;
+ }  */
 
+ /* 배경 */
+ body {
+  height: 3000px;
+ }
+ div {
+  /* width: 300px; */
+  height: 200px;
+  background-color: royalblue;
+  background-image: url("https://heropy.blog/css/images/logo.png");
+  /* 요소의 배경으로 출력할때는 이미지 삽입시 크기가 맞지 않는다면 반복적으로 나온다  */
+  background-size: cover; /*px 하나만 입력하게 되면 가로에 맞춰서 세로 사이즈를 자동으로 계산한다*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+ }
