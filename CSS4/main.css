@@ -121,17 +121,70 @@
  }  */
 
  /* 배경 */
+/*
  body {
   height: 3000px;
  }
  div {
-  /* width: 300px; */
+  width: 300px;
   height: 200px;
   background-color: royalblue;
   background-image: url("https://heropy.blog/css/images/logo.png");
-  /* 요소의 배경으로 출력할때는 이미지 삽입시 크기가 맞지 않는다면 반복적으로 나온다  */
-  background-size: cover; /*px 하나만 입력하게 되면 가로에 맞춰서 세로 사이즈를 자동으로 계산한다*/
+  요소의 배경으로 출력할때는 이미지 삽입시 크기가 맞지 않는다면 반복적으로 나온다 
+  background-size: cover; px 하나만 입력하게 되면 가로에 맞춰서 세로 사이즈를 자동으로 계산한다
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+ }
+ */
+
+
+
+ /* 배치 */
+ /* .container {
+  width: 300px;
+  background-color: royalblue;
+  position: relative;
+ }
+
+ .container .item {
+  border: 4px dashed red;
+  background-color: orange;
+ }
+
+ .container .item:nth-child(1) {
+  width: 100px;
+  height: 100px;
+ }
+
+ .container .item:nth-child(2) {
+  width: 140px;
+  height: 70px;
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+ }
+
+ .container .item:nth-child(3) {
+  width: 70px;
+  height: 120px;
+ } */
+
+
+ /* 플렉스(정렬) */
+ .container {
+  width: 500px;
+  height: 500px;
+  background-color: royalblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+ }
+
+ .container .item {
+  width: 100px;
+  height: 100px;
+  border: 3px dashed red;
+  background-color: orange;
  }
