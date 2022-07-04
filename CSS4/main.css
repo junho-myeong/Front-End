@@ -221,10 +221,18 @@
    width: 100px;
    height: 100px;
    background-color: royalblue;
+   perspective: 250px;
 }
 
 .container .item {
   width: 100px;
   height: 100px;
   background-color: orange;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: perspective(150px) rotateX(45deg) translateX(100px); */
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
