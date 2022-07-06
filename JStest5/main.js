@@ -18,3 +18,17 @@ let user = {
 console.log(user);
 console.log(user.name);
 console.log(user.age);
+
+// 함수란 특정 기능 을수행하는 코드들의 모임을 말한다.
+// 함수의 선언
+function testFunc() {
+  console.log(123);
+}
+// 함수 호출 부분
+testFunc();
+// 함수는 특정 기능을 수행함과 동시에 특정 값을 반환할수도 잇다.
+function returnFunc() {
+  return 1234;
+}
+let a = returnFunc();
+console.log(a)
