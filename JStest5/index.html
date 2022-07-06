@@ -5,9 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="./main.js"></script>
+  <!-- 프로그램은 위에서 아래로 읽기 때문에 defer가 없으면 js에서 요소를 제대로 잡을수 없게 된다, 그치만 defer 속성을 주게 된다면 html 코드를 읽은 상태로 main.js를 실행 하겠다는 뜻이다. -->
+  <script src="./main.js" defer></script>
 </head>
 <body>
-  
+  <div class="box">Box1</div>
+  <div class="box">Box2</div>
+  <div class="box">Box3</div>
+  <div class="box">Box4</div>
+  <div class="box">Box5</div>
+  <div class="box">Box6</div>
 </body>
 </html>
