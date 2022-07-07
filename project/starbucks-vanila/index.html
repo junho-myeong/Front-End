@@ -38,12 +38,41 @@
 
   <!-- 내 css 연결하기 -->
   <link rel="stylesheet" href="./css/main.css">
+
+  <!-- 내 js 연결하기 -->
+  <script src="./js/main.js" defer></script>
 </head>
 <body>
 
   <!-- header: header태그는 실제 어느 기능 보다는 이부분이 사이트에 header 영역이라고 알려주는것이다. -->
   <header>
+    <div class="inner">
 
+      <a href="./index.html" class="logo">
+        <img src="./images/starbucks_logo.png" alt="STARBUCKS">
+      </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+            <a href="/signin">Sign In</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">My Starbucks</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Customer Service & Ideas</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Find a Store</a>
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text">
+          <span class="material-icons">search</span>
+        </div>
+      </div>
+    </div>
   </header>
 </body>
 </html>
