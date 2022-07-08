@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   font-weight: 400;
+  height: 3000px;
 }
 img {
   /* 여기서 block으로 변경하는 이유는 img요소는 기본적으로 inline요소 이기 때문에 baseline을 가지고 잇다. 그렇기 때문에 아래 부분에 남는 부분이 생기기 때문이다. */
@@ -13,17 +14,24 @@ img {
 a {
   text-decoration: none;
 }
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
 
 /* HEADER */
 header {
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
+  /* position에 속성값이 absolute와 fixed인경우는 블록 요소임에도 불구 하고 가로 너비가 줄어 들려고 한다. */
+  position: fixed;
+  top: 0;
+  /* 가로 너비를 100%를 준이유는 포지션이라는 속성때문에 줄어 들려고 해서 그렇다 */
+  width: 100%;
 }
-header .inner {
-  width: 1100px;
+header>.inner {
   height: 120px;
-  margin: 0 auto;
-  position: relative;
 }
 header .logo {
   /* position을 통해 가운데 정렬하는 방법이다, 위에 inner 방법과 차이점은 현재 logo가 inline요소이기 때문에 absolute를 통해 block으로 바꾸기 위함이다. */
@@ -105,4 +113,107 @@ header .sub-menu .search .material-icons {
 
 header .sub-menu .search.focused .material-icons {
   opacity: 0;
+}
+
+header .main-menu {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header .main-menu .item {
+
+}
+
+header .main-menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+header .main-menu .item:hover .item__name {
+  background-color: #2c2a29;
+  color: #669900;
+  border-radius: 6px 6px 0 0;
+}
+
+header .main-menu .item .item__contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+
+header .main-menu .item:hover .item__contents {
+  display: block;
+}
+
+header .main-menu .item .item__contents .contents__menu {
+  background-color: #2c2a29;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul {
+  display: flex;
+  padding: 20px 0;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li {
+  width: 220px;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li h4 {
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li ul {
+
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+  color: #669900;
+}
+
+header .main-menu .item .item__contents .contents__texture {
+  font-size: 12px;
+  padding: 26px 0;
+  background-image: url("../images/main_menu_pattern.jpg");
+}
+
+header .main-menu .item .item__contents .contents__texture h4 {
+  color: #999;
+  font-weight: 700;
+}
+
+header .main-menu .item .item__contents .contents__texture p {
+  color: #669900;
+  margin: 4px 0 14px;
+}
+
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+
+header .badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.15); /*x축 y축 블러 10px rgba투명도*/
+  cursor: pointer;
+}
+
+header .badges .badge img {
+
 }
