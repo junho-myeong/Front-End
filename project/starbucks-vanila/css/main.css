@@ -370,9 +370,71 @@ header .badges .badge {
   width: 60%;
   height: 100%;
   background-color: #333;
+  display: flex;
+  align-items: center;
 }
+
+.notice .notice-line .inner .inner__left h2 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.notice .notice-line .inner .inner__left .swiper {
+  /* flex상태에서 최대한 늘어 나라는 뜻이다, 높이 값이 별도로 없으면 기본 값이 스트레치 이기 때문에 최대한 늘어 나려고 한다. */
+  flex-grow: 1;
+  /* 위에 가운대 정렬을 했기 때문에 사라진것을 다시 보이게 한다 */
+  height: 62px;
+}
+
+.notice .notice-line .inner .inner__left .swiper .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.notice .notice-line .inner .inner__left .swiper .swiper-slide a {
+  /* 글자의 색상은 상속 되지만 a 태그안에 잇는 내용에서는 상속이 이루어 지지 않는다. */
+  color: #fff;
+}
+
+.notice .notice-line .inner .inner__left .notice-line__more {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice .notice-line .inner .inner__left .notice-line__more .material-icons {
+  font-size: 30px;
+  color: #fff;
+}
+
 
 .notice .notice-line .inner .inner__right {
   width: 40%;
   height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.notice .notice-line .inner .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.notice .notice-line .inner .inner__right .toggle-promotion {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notice .notice-line .inner .inner__right .toggle-promotion .material-icons {
+  font-size: 30px;
 }
