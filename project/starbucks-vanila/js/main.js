@@ -134,3 +134,21 @@ spyEls.forEach(function(spyEl) {
     .setClassToggle(spyEl, 'show')
     .addTo(new ScrollMagic.Controller())
 })
+
+
+// AWARDS
+new Swiper('.awards .swiper', {
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+  navigation: {
+    prevEl: '.awards .swiper-button-prev',
+    nextEl: '.awards .swiper-button-next'
+  }
+})
+
+// year
+const thisYear = document.querySelector('footer .this-year')
+
+thisYear.textContent = new Date().getFullYear()
