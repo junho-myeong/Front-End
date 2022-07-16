@@ -18,6 +18,7 @@ searchInput.addEventListener('blur', function() {
 
 // BADGES
 const badgeEl = document.querySelector('header .badges')
+const toTopEl = document.querySelector('#to-top')
 
 // 윈도우는 브라우저에 하나의 창이라고 생각하면된다.
 // lodash라는 자바스크립트 라이브러리를 사용하는것이다.
@@ -36,6 +37,11 @@ window.addEventListener('scroll', _.throttle(function () {
       opacity: 0,
       display: 'none'
     })
+    // 버튼 보이기
+    // 버튼 숨기기
+    gsap.to(toTopEl, .2, {
+      x: 0,
+    })
   } else {
     // 배지 보이기
     // badgeEl.style.display = 'block'
@@ -43,8 +49,19 @@ window.addEventListener('scroll', _.throttle(function () {
       opacity: 1,
       display: 'block'
     })
+    // 버튼 숨기기
+    gsap.to(toTopEl, .2, {
+      x: 100,
+    })
   }
 }, 300))
+
+
+toTopEl.addEventListener('click', function() {
+  gsap.to(window, .7, {
+    scrollTo: 0
+  })
+})
 
 // visual
 const fadeEls = document.querySelectorAll('.visual .fade-in')
@@ -150,5 +167,6 @@ new Swiper('.awards .swiper', {
 
 // year
 const thisYear = document.querySelector('footer .this-year')
-
 thisYear.textContent = new Date().getFullYear()
+
+// to-top
