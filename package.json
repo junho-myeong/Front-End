@@ -1,0 +1,27 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "https://www.notion.so/Front-end-304095dffab84e3fbbb49f01587d75ce",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./nodejs6/index.html",
+    "build": "parcel build ./nodejs6/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junho-myeong/Front-End.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junho-myeong/Front-End/issues"
+  },
+  "homepage": "https://github.com/junho-myeong/Front-End#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
