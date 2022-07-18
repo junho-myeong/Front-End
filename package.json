@@ -1,27 +1,35 @@
 {
-  "name": "front-end",
+  "name": "svelte-spa-movie-app",
   "version": "1.0.0",
-  "description": "https://www.notion.so/Front-end-304095dffab84e3fbbb49f01587d75ce",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./nodejs6/index.html",
-    "build": "parcel build ./nodejs6/index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/junho-myeong/Front-End.git"
+    "dev:snowpack": "snowpack dev",
+    "dev": "netlify dev",
+    "build": "snowpack build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/junho-myeong/Front-End/issues"
-  },
-  "homepage": "https://github.com/junho-myeong/Front-End#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
+    "@snowpack/plugin-babel": "^2.1.4",
+    "@snowpack/plugin-dotenv": "^2.0.4",
+    "@snowpack/plugin-optimize": "^0.2.9",
+    "@snowpack/plugin-sass": "^1.1.1",
+    "@snowpack/plugin-svelte": "^3.3.0",
+    "autoprefixer": "^10.0.2",
+    "axios": "^0.21.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "lodash": "^4.17.20",
+    "netlify-cli": "^2.68.5",
+    "postcss": "^8.1.7",
+    "qs": "^6.9.4",
+    "snowpack": "^2.17.1",
+    "svelte": "^3.29.7",
+    "svelte-spa-router": "^3.0.5"
   }
 }
